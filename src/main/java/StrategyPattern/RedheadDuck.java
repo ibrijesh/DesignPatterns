@@ -1,6 +1,6 @@
 package StrategyPattern;
 
-public class RedheadDuck extends Duck {
+public class RedheadDuck extends Duck implements IFlyable, IQuackable {
 
     @Override
     void display() {
@@ -8,7 +8,12 @@ public class RedheadDuck extends Duck {
     }
 
     @Override
-    void fly() {
+    public void fly() {
         // fly
+    }
+
+    @Override
+    public void quack() {
+        // quack
     }
 }

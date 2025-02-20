@@ -1,6 +1,6 @@
 package StrategyPattern;
 
-public class RubberDuck extends Duck{
+public class RubberDuck extends Duck implements IQuackable {
 
     @Override
     void display() {
@@ -8,7 +8,7 @@ public class RubberDuck extends Duck{
     }
 
     @Override
-    void fly() {
-        // do nothing
+    public void quack() {
+        // squeak
     }
 }
