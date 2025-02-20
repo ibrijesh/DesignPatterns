@@ -6,4 +6,9 @@ public class RubberDuck extends Duck{
     void display() {
         // look-like rubber duck
     }
+
+    @Override
+    void fly() {
+        // do nothing
+    }
 }

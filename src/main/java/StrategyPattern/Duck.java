@@ -6,9 +6,9 @@ abstract class Duck {
 
     void swim() {}
 
-    void fly() {}
-
     abstract void display();      // abstract because since all the  duck subtype look's different.
+
+    abstract void fly();
 
     // Other duck-like method's
 }

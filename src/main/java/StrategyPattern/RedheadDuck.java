@@ -6,4 +6,9 @@ public class RedheadDuck extends Duck {
     void display() {
         // look's like Redhead Duck.
     }
+
+    @Override
+    void fly() {
+        // fly
+    }
 }
