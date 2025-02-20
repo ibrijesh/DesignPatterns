@@ -1,4 +1,4 @@
-package StrategyPattern;
+package StrategyPattern.Ducks;
 
 public class DecoyDuck extends Duck {
 
