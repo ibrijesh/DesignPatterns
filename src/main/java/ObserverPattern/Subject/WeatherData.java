@@ -8,7 +8,7 @@ public class WeatherData implements Subject {
     private double temperature;
     private double humidity;
     private double pressure;
-    List<ObserverPattern.Observer.Observer> observers;
+    List<Observer> observers;
 
     public WeatherData() {
         this.observers = new ArrayList<>();
@@ -16,7 +16,7 @@ public class WeatherData implements Subject {
 
 
     @Override
-    public void registerObserver(final ObserverPattern.Observer.Observer observer) {
+    public void registerObserver(final Observer observer) {
         observers.add(observer);
     }
 
