@@ -15,10 +15,10 @@ public class ForeCastDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(final double temperature, final double humidity, final double pressure) {
-        this.maxTemperature = Math.max(temperature, this.maxTemperature);
-        this.maxHumidity = Math.max(humidity, this.maxHumidity);
-        this.maxPressure = Math.max(pressure, this.maxPressure);
+    public void update() {
+        this.maxTemperature = Math.max(weatherData.getTemperature(), this.maxTemperature);
+        this.maxHumidity = Math.max(weatherData.getHumidity(), this.maxHumidity);
+        this.maxPressure = Math.max(weatherData.getPressure(), this.maxPressure);
         display();
     }
 
