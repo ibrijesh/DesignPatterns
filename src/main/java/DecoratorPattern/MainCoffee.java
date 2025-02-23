@@ -1,5 +1,13 @@
 package DecoratorPattern;
 
+import DecoratorPattern.Components.Beverage;
+import DecoratorPattern.Components.DarkRoast;
+import DecoratorPattern.Components.Espresso;
+import DecoratorPattern.Components.HouseBlend;
+import DecoratorPattern.Decorator.Mocha;
+import DecoratorPattern.Decorator.Soy;
+import DecoratorPattern.Decorator.Whip;
+
 public class MainCoffee {
     public static void main(String[] args) {
 

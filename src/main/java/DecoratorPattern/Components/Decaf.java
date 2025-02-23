@@ -1,4 +1,5 @@
-package DecoratorPattern;
+package DecoratorPattern.Components;
+
 
 public class Decaf extends Beverage {
 

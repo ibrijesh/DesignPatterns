@@ -1,4 +1,4 @@
-package DecoratorPattern;
+package DecoratorPattern.Components;
 
 public class Espresso extends Beverage {
 

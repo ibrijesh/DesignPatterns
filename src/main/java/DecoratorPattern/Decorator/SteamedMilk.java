@@ -1,4 +1,6 @@
-package DecoratorPattern;
+package DecoratorPattern.Decorator;
+
+import DecoratorPattern.Components.Beverage;
 
 public class SteamedMilk extends CondimentDecorator {
 
