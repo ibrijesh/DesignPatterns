@@ -1,5 +1,9 @@
 package ObserverPattern;
 
+import ObserverPattern.Observer.CurrentConditionDisplay;
+import ObserverPattern.Observer.ForeCastDisplay;
+import ObserverPattern.Subject.WeatherData;
+
 public class MainWeather {
     public static void main(String[] args) {
 

@@ -1,4 +1,6 @@
-package ObserverPattern;
+package ObserverPattern.Subject;
+
+import ObserverPattern.Observer.Observer;
 
 import java.util.*;
 
@@ -6,15 +8,15 @@ public class WeatherData implements Subject {
     private double temperature;
     private double humidity;
     private double pressure;
-    List<Observer> observers;
+    List<ObserverPattern.Observer.Observer> observers;
 
-    WeatherData() {
+    public WeatherData() {
         this.observers = new ArrayList<>();
     }
 
 
     @Override
-    public void registerObserver(final Observer observer) {
+    public void registerObserver(final ObserverPattern.Observer.Observer observer) {
         observers.add(observer);
     }
 
@@ -32,7 +34,7 @@ public class WeatherData implements Subject {
         notifyObservers();
     }
 
-    void setMeasurement(double temperature, double humidity, double pressure) {
+    public void setMeasurement(double temperature, double humidity, double pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;

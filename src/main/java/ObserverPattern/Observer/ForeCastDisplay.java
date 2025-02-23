@@ -1,4 +1,7 @@
-package ObserverPattern;
+package ObserverPattern.Observer;
+
+import ObserverPattern.DisplayElement;
+import ObserverPattern.Subject.WeatherData;
 
 public class ForeCastDisplay implements Observer, DisplayElement {
     private double maxTemperature;
@@ -6,7 +9,7 @@ public class ForeCastDisplay implements Observer, DisplayElement {
     private double maxPressure;
     private WeatherData weatherData;
 
-    ForeCastDisplay(WeatherData weatherData) {
+    public ForeCastDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }

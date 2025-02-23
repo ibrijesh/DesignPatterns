@@ -1,11 +1,14 @@
-package ObserverPattern;
+package ObserverPattern.Observer;
+
+import ObserverPattern.DisplayElement;
+import ObserverPattern.Subject.WeatherData;
 
 public class CurrentConditionDisplay implements Observer, DisplayElement {
     private double temperature;
     private double humidity;
     private WeatherData weatherData;
 
-    CurrentConditionDisplay(WeatherData weatherData) {
+    public CurrentConditionDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
