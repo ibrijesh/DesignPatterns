@@ -3,7 +3,7 @@ package FactoryPattern.FactoryMethod;
 import FactoryPattern.FactoryMethod.Creator.ChicagoStylePizzaStore;
 import FactoryPattern.FactoryMethod.Creator.NewYorkStylePizzaStore;
 
-public class FactoryMethod {
+public class FactoryMethodMain {
     public static void main(String args[]) {
 
         NewYorkStylePizzaStore store1 = new NewYorkStylePizzaStore();

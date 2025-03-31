@@ -3,7 +3,7 @@ package FactoryPattern.NotFactoryMethod;
 import FactoryPattern.NotFactoryMethod.Creator.PizzaStore;
 import FactoryPattern.NotFactoryMethod.Creator.SimplePizzaFactory;
 
-public class NotFactoryMethod {
+public class NotFactoryMethodMain {
     public static void main(String args[]) {
 
         SimplePizzaFactory factory = new SimplePizzaFactory();
