@@ -1,6 +1,6 @@
 package FactoryPattern.FactoryMethod;
 
-import FactoryPattern.FactoryMethod.Creator.ChicagoStylePizza;
+import FactoryPattern.FactoryMethod.Creator.ChicagoStylePizzaStore;
 import FactoryPattern.FactoryMethod.Creator.NewYorkStylePizzaStore;
 
 public class FactoryMethod {
@@ -17,7 +17,7 @@ public class FactoryMethod {
         System.out.println("\n");
 
 
-        ChicagoStylePizza store2 = new ChicagoStylePizza();
+        ChicagoStylePizzaStore store2 = new ChicagoStylePizzaStore();
         store2.orderPizza("veggies");
 
 

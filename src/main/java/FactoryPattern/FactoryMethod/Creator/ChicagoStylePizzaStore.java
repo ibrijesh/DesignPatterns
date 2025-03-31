@@ -5,7 +5,7 @@ import FactoryPattern.FactoryMethod.Product.ChicagoStyle.ChicagoPepperoniPizza;
 import FactoryPattern.FactoryMethod.Product.ChicagoStyle.ChicagoVeggiesPizza;
 import FactoryPattern.FactoryMethod.Product.Pizza;
 
-public class ChicagoStylePizza extends PizzaStore {
+public class ChicagoStylePizzaStore extends PizzaStore {
 
     @Override
     Pizza createPizza(final String type) {
