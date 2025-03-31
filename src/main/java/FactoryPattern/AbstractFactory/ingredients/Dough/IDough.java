@@ -1,4 +1,4 @@
-package FactoryPattern.AbstractFactory.Products.Dough;
+package FactoryPattern.AbstractFactory.ingredients.Dough;
 
 public interface IDough {
     String toString();

@@ -1,4 +1,4 @@
-package FactoryPattern.AbstractFactory.Products.Pepperoni;
+package FactoryPattern.AbstractFactory.ingredients.Pepperoni;
 
 public class SlicedPepperoni implements IPepperoni {
     @Override

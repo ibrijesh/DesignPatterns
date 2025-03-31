@@ -1,34 +1,36 @@
 package FactoryPattern.AbstractFactory.store;
 
-import FactoryPattern.AbstractFactory.factory.NewYorkIngredientFactory;
+import FactoryPattern.AbstractFactory.factory.ChicagoIngredientFactory;
 import FactoryPattern.AbstractFactory.factory.PizzaIngredientFactory;
 import FactoryPattern.AbstractFactory.pizza.CheesePizza;
 import FactoryPattern.AbstractFactory.pizza.PepperoniPizza;
 import FactoryPattern.AbstractFactory.pizza.Pizza;
 import FactoryPattern.AbstractFactory.pizza.VeggiePizza;
 
-public class NewYorkPizzaStore extends PizzaStore {
+public class ChicagoPizzaStore extends PizzaStore {
 
     @Override
     protected Pizza createPizza(final String item) {
         Pizza pizza = null;
 
-        PizzaIngredientFactory ingredientFactory = new NewYorkIngredientFactory();
+        System.out.println(item);
+
+        PizzaIngredientFactory ingredientFactory = new ChicagoIngredientFactory();
 
         return switch (item.toLowerCase()) {
             case "cheese" -> {
                 pizza = new CheesePizza(ingredientFactory);
-                pizza.setName("New York Style Cheese Pizza");
+                pizza.setName("Chicago Style Cheese Pizza");
                 yield pizza;
             }
-            case "veggie" -> {
+            case "veggies" -> {
                 pizza = new VeggiePizza(ingredientFactory);
-                pizza.setName("New York Style Veggies  Pizza");
+                pizza.setName("Chicago Style Veggies  Pizza");
                 yield pizza;
             }
             case "pepperoni" -> {
                 pizza = new PepperoniPizza(ingredientFactory);
-                pizza.setName("New York Style Pepperoni Pizza");
+                pizza.setName("Chicago Style Pepperoni Pizza");
                 yield pizza;
             }
             default -> null;

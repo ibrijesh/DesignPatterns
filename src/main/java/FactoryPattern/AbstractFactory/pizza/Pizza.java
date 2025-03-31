@@ -1,10 +1,10 @@
-package FactoryPattern.AbstractFactory.Ingredients;
+package FactoryPattern.AbstractFactory.pizza;
 
-import FactoryPattern.AbstractFactory.Ingredients.Cheese.ICheese;
-import FactoryPattern.AbstractFactory.Ingredients.Dough.IDough;
-import FactoryPattern.AbstractFactory.Ingredients.Pepperoni.IPepperoni;
-import FactoryPattern.AbstractFactory.Ingredients.Sauce.ISauce;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.IVeggies;
+import FactoryPattern.AbstractFactory.ingredients.Cheese.ICheese;
+import FactoryPattern.AbstractFactory.ingredients.Dough.IDough;
+import FactoryPattern.AbstractFactory.ingredients.Pepperoni.IPepperoni;
+import FactoryPattern.AbstractFactory.ingredients.Sauce.ISauce;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.IVeggies;
 
 public abstract class Pizza {
     String name;
@@ -14,22 +14,26 @@ public abstract class Pizza {
     IPepperoni pepperoni;
     IVeggies veggies[];
 
-    abstract void prepare();
+    public abstract void prepare();
 
-    void bake() {
+    public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String toString() {
@@ -61,6 +65,7 @@ public abstract class Pizza {
             result.append(pepperoni);
             result.append("\n");
         }
+
         return result.toString();
     }
 

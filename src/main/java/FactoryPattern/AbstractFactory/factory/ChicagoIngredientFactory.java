@@ -1,17 +1,17 @@
-package FactoryPattern.AbstractFactory.Factories;
+package FactoryPattern.AbstractFactory.factory;
 
-import FactoryPattern.AbstractFactory.Ingredients.Cheese.ICheese;
-import FactoryPattern.AbstractFactory.Ingredients.Cheese.MozzarellaCheese;
-import FactoryPattern.AbstractFactory.Ingredients.Dough.IDough;
-import FactoryPattern.AbstractFactory.Ingredients.Dough.ThickCrustDough;
-import FactoryPattern.AbstractFactory.Ingredients.Pepperoni.IPepperoni;
-import FactoryPattern.AbstractFactory.Ingredients.Pepperoni.SlicedPepperoni;
-import FactoryPattern.AbstractFactory.Ingredients.Sauce.ISauce;
-import FactoryPattern.AbstractFactory.Ingredients.Sauce.PlumTomatoSauce;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.BlackOlives;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.EggPlant;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.IVeggies;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.Spinach;
+import FactoryPattern.AbstractFactory.ingredients.Cheese.ICheese;
+import FactoryPattern.AbstractFactory.ingredients.Cheese.MozzarellaCheese;
+import FactoryPattern.AbstractFactory.ingredients.Dough.IDough;
+import FactoryPattern.AbstractFactory.ingredients.Dough.ThickCrustDough;
+import FactoryPattern.AbstractFactory.ingredients.Pepperoni.IPepperoni;
+import FactoryPattern.AbstractFactory.ingredients.Pepperoni.SlicedPepperoni;
+import FactoryPattern.AbstractFactory.ingredients.Sauce.ISauce;
+import FactoryPattern.AbstractFactory.ingredients.Sauce.PlumTomatoSauce;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.BlackOlives;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.EggPlant;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.IVeggies;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.Spinach;
 
 public class ChicagoIngredientFactory implements PizzaIngredientFactory {
 

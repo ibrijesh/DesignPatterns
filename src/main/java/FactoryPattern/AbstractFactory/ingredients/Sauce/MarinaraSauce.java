@@ -1,4 +1,4 @@
-package FactoryPattern.AbstractFactory.Products.Sauce;
+package FactoryPattern.AbstractFactory.ingredients.Sauce;
 
 public class MarinaraSauce implements ISauce {
     @Override

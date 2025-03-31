@@ -1,18 +1,18 @@
-package FactoryPattern.AbstractFactory.Factories;
+package FactoryPattern.AbstractFactory.factory;
 
-import FactoryPattern.AbstractFactory.Ingredients.Cheese.ICheese;
-import FactoryPattern.AbstractFactory.Ingredients.Cheese.ReggianoCheese;
-import FactoryPattern.AbstractFactory.Ingredients.Dough.IDough;
-import FactoryPattern.AbstractFactory.Ingredients.Dough.ThinCrustDough;
-import FactoryPattern.AbstractFactory.Ingredients.Pepperoni.IPepperoni;
-import FactoryPattern.AbstractFactory.Ingredients.Pepperoni.SlicedPepperoni;
-import FactoryPattern.AbstractFactory.Ingredients.Sauce.ISauce;
-import FactoryPattern.AbstractFactory.Ingredients.Sauce.MarinaraSauce;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.Garlic;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.IVeggies;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.Mushroom;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.Onion;
-import FactoryPattern.AbstractFactory.Ingredients.Veggies.RedPepper;
+import FactoryPattern.AbstractFactory.ingredients.Cheese.ICheese;
+import FactoryPattern.AbstractFactory.ingredients.Cheese.ReggianoCheese;
+import FactoryPattern.AbstractFactory.ingredients.Dough.IDough;
+import FactoryPattern.AbstractFactory.ingredients.Dough.ThinCrustDough;
+import FactoryPattern.AbstractFactory.ingredients.Pepperoni.IPepperoni;
+import FactoryPattern.AbstractFactory.ingredients.Pepperoni.SlicedPepperoni;
+import FactoryPattern.AbstractFactory.ingredients.Sauce.ISauce;
+import FactoryPattern.AbstractFactory.ingredients.Sauce.MarinaraSauce;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.Garlic;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.IVeggies;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.Mushroom;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.Onion;
+import FactoryPattern.AbstractFactory.ingredients.Veggies.RedPepper;
 
 public class NewYorkIngredientFactory implements PizzaIngredientFactory {
 

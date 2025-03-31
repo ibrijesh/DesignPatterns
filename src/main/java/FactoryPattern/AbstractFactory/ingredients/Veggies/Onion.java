@@ -1,4 +1,4 @@
-package FactoryPattern.AbstractFactory.Products.Veggies;
+package FactoryPattern.AbstractFactory.ingredients.Veggies;
 
 public class Onion implements IVeggies {
 

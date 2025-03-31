@@ -1,4 +1,4 @@
-package FactoryPattern.AbstractFactory.Products.Cheese;
+package FactoryPattern.AbstractFactory.ingredients.Cheese;
 
 public class ParmesanCheese implements ICheese {
     @Override
